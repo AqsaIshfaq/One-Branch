@@ -1,7 +1,6 @@
 pipeline {
     agent any
     stages {
-<<<<<<< HEAD
         stage('Deploy') {
             steps {
                 script {
@@ -37,22 +36,3 @@ pipeline {
         }
     }
 }
-=======
-        stage('Build') {
-            steps {
-                echo 'Building...'
-            }
-        }
-        stage('Test') {
-            steps {
-                echo 'Testing...'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying...'
-            }
-        }
-    }
-}
->>>>>>> 384a1631b595599fd8598f6f5cbef37715254caa
