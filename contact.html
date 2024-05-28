@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Makeup Boutique - About Us</title>
+    <title>Makeup Boutique - Contact Us</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -52,21 +52,64 @@
             background-color: #ff007f; /* Lighter pink */
         }
 
-        .about-section {
+        .contact-section {
             margin-top: 40px;
             text-align: center;
         }
 
-        .about-section h2 {
+        .contact-section h2 {
             font-size: 2rem;
             margin-bottom: 20px;
             color: #333;
         }
 
-        .about-section p {
+        .contact-info {
+            margin-bottom: 30px;
+        }
+
+        .contact-info p {
             font-size: 1.2rem;
             line-height: 1.6;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
+        }
+
+        .contact-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form label {
+            font-size: 1.2rem;
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+
+        .contact-form button {
+            background-color: #ff6699; /* Pink color */
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 1.2rem;
+        }
+
+        .contact-form button:hover {
+            background-color: #ff007f; /* Lighter pink */
         }
 
         footer {
@@ -91,11 +134,27 @@
         </div>
     </header>
 
-    <section class="container about-section">
-        <h2>About Us</h2>
-        <p>Welcome to Makeup Boutique, your one-stop destination for all things beauty!</p>
-        <p>At Makeup Boutique, we believe in helping you express your unique beauty through high-quality makeup products. Our team is passionate about curating the latest trends and best beauty products, so you can always look and feel your best.</p>
-        <p>Whether you're a makeup enthusiast or just starting your beauty journey, we're here to inspire and empower you with our wide selection of makeup products.</p>
+    <section class="container contact-section">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p>Email: info@makeupboutique.com</p>
+            <p>Phone: 1-800-123-4567</p>
+            <p>Address: 123 Beauty Ave, Cityville, Country</p>
+        </div>
+        <div class="contact-form">
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
     </section>
 
     <footer>
